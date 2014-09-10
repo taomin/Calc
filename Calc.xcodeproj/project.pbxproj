@@ -19,6 +19,10 @@
 		B7E9C96F19BADCB900CE4A6F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B7E9C95719BADCB900CE4A6F /* UIKit.framework */; };
 		B7E9C97719BADCB900CE4A6F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7E9C97519BADCB900CE4A6F /* InfoPlist.strings */; };
 		B7E9C97919BADCB900CE4A6F /* CalcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E9C97819BADCB900CE4A6F /* CalcTests.m */; };
+		B7E9C98519BADCD000CE4A6F /* CALViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E9C98319BADCD000CE4A6F /* CALViewController.m */; };
+		B7E9C98619BADCD000CE4A6F /* CALViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7E9C98419BADCD000CE4A6F /* CALViewController.xib */; };
+		B7E9C98A19BBBDF000CE4A6F /* CALSettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7E9C98819BBBDF000CE4A6F /* CALSettingsController.m */; };
+		B7E9C98B19BBBDF000CE4A6F /* CALSettingsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7E9C98919BBBDF000CE4A6F /* CALSettingsController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +52,12 @@
 		B7E9C97419BADCB900CE4A6F /* CalcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalcTests-Info.plist"; sourceTree = "<group>"; };
 		B7E9C97619BADCB900CE4A6F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B7E9C97819BADCB900CE4A6F /* CalcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalcTests.m; sourceTree = "<group>"; };
+		B7E9C98219BADCD000CE4A6F /* CALViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALViewController.h; sourceTree = "<group>"; };
+		B7E9C98319BADCD000CE4A6F /* CALViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALViewController.m; sourceTree = "<group>"; };
+		B7E9C98419BADCD000CE4A6F /* CALViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CALViewController.xib; sourceTree = "<group>"; };
+		B7E9C98719BBBDF000CE4A6F /* CALSettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CALSettingsController.h; sourceTree = "<group>"; };
+		B7E9C98819BBBDF000CE4A6F /* CALSettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CALSettingsController.m; sourceTree = "<group>"; };
+		B7E9C98919BBBDF000CE4A6F /* CALSettingsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CALSettingsController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +121,12 @@
 				B7E9C96319BADCB900CE4A6F /* CALAppDelegate.m */,
 				B7E9C96519BADCB900CE4A6F /* Images.xcassets */,
 				B7E9C95A19BADCB900CE4A6F /* Supporting Files */,
+				B7E9C98219BADCD000CE4A6F /* CALViewController.h */,
+				B7E9C98319BADCD000CE4A6F /* CALViewController.m */,
+				B7E9C98419BADCD000CE4A6F /* CALViewController.xib */,
+				B7E9C98719BBBDF000CE4A6F /* CALSettingsController.h */,
+				B7E9C98819BBBDF000CE4A6F /* CALSettingsController.m */,
+				B7E9C98919BBBDF000CE4A6F /* CALSettingsController.xib */,
 			);
 			path = Calc;
 			sourceTree = "<group>";
@@ -222,6 +238,8 @@
 			files = (
 				B7E9C95E19BADCB900CE4A6F /* InfoPlist.strings in Resources */,
 				B7E9C96619BADCB900CE4A6F /* Images.xcassets in Resources */,
+				B7E9C98619BADCD000CE4A6F /* CALViewController.xib in Resources */,
+				B7E9C98B19BBBDF000CE4A6F /* CALSettingsController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +260,8 @@
 			files = (
 				B7E9C96019BADCB900CE4A6F /* main.m in Sources */,
 				B7E9C96419BADCB900CE4A6F /* CALAppDelegate.m in Sources */,
+				B7E9C98519BADCD000CE4A6F /* CALViewController.m in Sources */,
+				B7E9C98A19BBBDF000CE4A6F /* CALSettingsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
