@@ -60,9 +60,11 @@
     float ratio1 = [self->defaults floatForKey:@"ratio1"];
     float ratio2 = [self->defaults floatForKey:@"ratio2"];
     float ratio3 = [self->defaults floatForKey:@"ratio3"];
-    self->tipRatios = @[@(ratio1), @(ratio2), @(ratio3)];
+    if (ratio1 > 0 || ratio2 > 0 || ratio3 > 0) {
+        self->tipRatios = @[@(ratio1), @(ratio2), @(ratio3)];
+    }
     
-    for (int i=0, j=[self.tipratio numberOfSegments]; i<j; i++) {
+    for (NSInteger i=0, j=[self.tipratio numberOfSegments] ; i<j; i++) {
         float ratio = [[self->tipRatios objectAtIndex:i] floatValue] * 100;
         [self.tipratio setTitle:[NSString stringWithFormat:@"%0.2f%%", ratio] forSegmentAtIndex:i];
     }

@@ -65,13 +65,25 @@
 - (IBAction)onTap:(id)sender {
     //sync defaults
 //    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
-    [self.view endEditing:YES];
+
+    
     float ratio1 = [self.ratio1.text floatValue] / 100;
     float ratio2 = [self.ratio2.text floatValue] / 100;
     float ratio3 = [self.ratio3.text floatValue] / 100;
-    [self->defaults setFloat:ratio1 forKey:@"ratio1"];
-    [self->defaults setFloat:ratio2 forKey:@"ratio2"];
-    [self->defaults setFloat:ratio3 forKey:@"ratio3"];
+
+    if (ratio1 > 0 && ratio2 > 0 && ratio3 > 0) {
+        [self->defaults setFloat:ratio1 forKey:@"ratio1"];
+        [self->defaults setFloat:ratio2 forKey:@"ratio2"];
+        [self->defaults setFloat:ratio3 forKey:@"ratio3"];
+        [self.view endEditing:YES];
+    } else {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Tip ratio cannot be 0"
+														message:nil
+													   delegate:nil
+                                              cancelButtonTitle:@"OK"
+											  otherButtonTitles:nil];
+		[alert show];
+    }
 }
 
 @end
