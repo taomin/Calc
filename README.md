@@ -5,6 +5,6 @@ Input bill amount and calculate the tip
 - Finished required task: Being able to customize tip ratio. Remember tip ratio after restart app
 - Preview gif:
 
-![Tabber|250](http://i.imgur.com/VyoVuA1s.jpg)
+![Tabber|400](http://i.imgur.com/VyoVuA1.gif)
 
 
